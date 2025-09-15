@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛车游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <div class="timer">时间: <span id="time">02:00</span></div>
+            <div class="score">排名: <span id="rank">-</span></div>
+        </div>
+        
+        <div class="race-track" id="track">
+            <div class="player-car" id="player"></div>
+            <div class="ai-car" id="ai1"></div>
+            <div class="ai-car" id="ai2"></div>
+            <div class="ai-car" id="ai3"></div>
+            <div class="finish-line"></div>
+        </div>
+        
+        <div class="controls">
+            <button class="control-btn" id="up">↑</button>
+            <div class="horizontal-controls">
+                <button class="control-btn" id="left">←</button>
+                <button class="control-btn" id="right">→</button>
+            </div>
+            <button class="control-btn" id="down">↓</button>
+        </div>
+        
+        <div class="game-status">
+            <button id="start-btn">开始游戏</button>
+            <div id="message"></div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
